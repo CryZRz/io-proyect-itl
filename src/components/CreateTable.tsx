@@ -21,8 +21,8 @@ export default function CreateTable() {
     }, [numVariables, numRestrictions])
 
     useEffect(() => {
-        const verifyEnd =  arrNumRestrictions.some(row => row.some(value => value === ""));
-        const verifyEndRestricitons = arrValueResultRestrictions.some(value => value === "")
+        const verifyEnd =  arrNumRestrictions.some(row => row.some(value => value.toString() === ""));
+        const verifyEndRestricitons = arrValueResultRestrictions.some(value => value.toString() === "")
 
         if(arrNumRestrictions.length > 0 && arrValueResultRestrictions.length > 0){
             if(!verifyEnd && !verifyEndRestricitons){

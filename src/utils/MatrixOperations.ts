@@ -13,6 +13,7 @@ export class MatrixOperations {
         this.objectiveFunction = matrix[0]
         this.headColumn = headColumn
         this.headRow = headRow
+        console.log(this.objectiveFunction)
         this.getMatrixRestrictions()
     }
 
